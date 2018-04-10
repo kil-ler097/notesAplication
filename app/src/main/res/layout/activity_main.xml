@@ -1,42 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.example.arshinov.notesaplication.MainActivity">
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/container2"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_x="155dp"
-        android:layout_y="490dp"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:orientation="vertical"
+        android:visibility="visible"
+        android:weightSum="1">
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="26dp"
-        android:layout_height="27dp"
-        android:layout_x="359dp"
-        android:layout_y="486dp"
-        android:background="@android:drawable/ic_input_add"
-        android:onClick="addNotes"
-        tools:layout_editor_absoluteX="352dp"
-        tools:layout_editor_absoluteY="477dp" />
 
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_x="3dp"
-        android:layout_y="464dp"
-        android:onClick="readsDB"
-        android:text="Button"
-        tools:layout_editor_absoluteX="245dp"
-        tools:layout_editor_absoluteY="436dp" />
-
-</AbsoluteLayout>
+        <Button
+            android:id="@+id/button"
+            android:layout_width="43dp"
+            android:layout_height="27dp"
+            android:layout_x="172dp"
+            android:layout_y="3dp"
+            android:background="@android:drawable/ic_input_add"
+            android:onClick="addNotes"
+            tools:layout_editor_absoluteX="352dp"
+            tools:layout_editor_absoluteY="477dp" />
+    </LinearLayout>
+</ScrollView>
