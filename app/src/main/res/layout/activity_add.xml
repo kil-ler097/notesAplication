@@ -8,11 +8,23 @@
     tools:context="com.example.arshinov.notesaplication.AddActivity">
 
     <EditText
+        android:id="@+id/editText2"
+        android:layout_width="356dp"
+        android:layout_height="wrap_content"
+        android:layout_x="15dp"
+        android:layout_y="405dp"
+        android:ems="10"
+        android:enabled="false"
+        android:inputType="text"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="46dp" />
+
+    <EditText
         android:id="@+id/editText"
         android:layout_width="356dp"
         android:layout_height="wrap_content"
         android:layout_x="11dp"
-        android:layout_y="29dp"
+        android:layout_y="44dp"
         android:ems="10"
         android:inputType="textPersonName"
         tools:layout_editor_absoluteX="16dp"
@@ -39,4 +51,5 @@
         android:text="Save"
         tools:layout_editor_absoluteX="16dp"
         tools:layout_editor_absoluteY="445dp" />
+
 </AbsoluteLayout>

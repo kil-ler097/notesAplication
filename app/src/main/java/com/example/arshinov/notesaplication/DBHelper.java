@@ -26,6 +26,7 @@ public class DBHelper extends SQLiteOpenHelper {
     }
 
 
+
     @Override
     public void onCreate(SQLiteDatabase db) {
         db.execSQL("create table " + TABLE_NOTES + "(" + KEY_ID
@@ -37,5 +38,9 @@ public class DBHelper extends SQLiteOpenHelper {
     public void onUpgrade(SQLiteDatabase db, int i, int i1) {
         db.execSQL("drop table if exists " + TABLE_NOTES);
         onCreate(db);
+    }
+
+    public void deleteField(SQLiteDatabase db,String id){
+        db.execSQL("delete from " + TABLE_NOTES + "where" + KEY_ID + "="+id);
     }
 }
